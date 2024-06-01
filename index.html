@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Entry Form</title>
+    <style>
+        form { max-width: 600px; margin: 0 auto; }
+        .error { color: red; }
+    </style>
+    <script src="validation.js"></script>
+</head>
+<body>
+    <form name="entryForm" method="post" action="process_info.php" onsubmit="return validateForm()">
+        <label for="student_id">Student ID*</label><br>
+        <input type="text" id="student_id" name="student_id">
+        <span class="error" id="studentIdError"></span><br><br>
+
+        <label for="first_name">First Name*</label><br>
+        <input type="text" id="first_name" name="first_name">
+        <span class="error" id="firstNameError"></span><br><br>
+
+        <label for="last_name">Last Name*</label><br>
+        <input type="text" id="last_name" name="last_name">
+        <span class="error" id="lastNameError"></span><br><br>
+
+        <label for="batch_class">Batch/Class*</label><br>
+        <input type="text" id="batch_class" name="batch_class">
+        <span class="error" id="batchClassError"></span><br><br>
+
+        <label for="email">Email*</label><br>
+        <input type="text" id="email" name="email">
+        <span class="error" id="emailError"></span><br><br>
+
+        <label for="english">English*</label><br>
+        <input type="text" id="english" name="english">
+        <span class="error" id="englishError"></span><br><br>
+
+        <label for="hindi">Hindi*</label><br>
+        <input type="text" id="hindi" name="hindi">
+        <span class="error" id="hindiError"></span><br><br>
+
+        <label for="math">Math*</label><br>
+        <input type="text" id="math" name="math">
+        <span class="error" id="mathError"></span><br><br>
+
+        <label for="science">Science*</label><br>
+        <input type="text" id="science" name="science">
+        <span class="error" id="scienceError"></span><br><br>
+
+        <label for="history">History*</label><br>
+        <input type="text" id="history" name="history">
+        <span class="error" id="historyError"></span><br><br>
+
+        <label for="geography">Geography*</label><br>
+        <input type="text" id="geography" name="geography">
+        <span class="error" id="geographyError"></span><br><br>
+
+        <label for="remarks">Remarks</label><br>
+        <input type="text" id="remarks" name="remarks" maxlength="150">
+        <span class="error" id="remarksError"></span><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
